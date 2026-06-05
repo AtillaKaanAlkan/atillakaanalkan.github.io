@@ -20,12 +20,13 @@ author:
 #   baseurl: "/webpage"
 #
 # Pick ONE. The default below is the USER SITE case.
-url: "https://atillaalkan.github.io"
-baseurl: ""                          # correct for a USERNAME.github.io user site
+url: "https://atillakaanalkan.github.io"
+baseurl: ""                          # "" if repo is renamed to atillakaanalkan.github.io;
+                                     # set to "/atillaalkan.github.io" if you keep the current repo name
 
 # ---- Social / contact (shown in the footer and on the home page) --------
 social:
-  github: "atillaalkan"     # your GitHub handle
+  github: "AtillaKaanAlkan"  # your GitHub handle
   linkedin: ""              # TODO  full URL or handle
   twitter: ""              # optional
   mastodon: ""             # optional, full URL
