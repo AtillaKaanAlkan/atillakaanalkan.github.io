@@ -1,0 +1,87 @@
+---
+layout: default
+title: Home
+description: Researcher in NLP & AI — research, publications, blog and outreach.
+---
+<div class="container">
+
+  <!-- ============ HERO / BIO ============ -->
+  <section class="hero">
+    <div class="hero-photo">
+      <img src="{{ '/assets/images/profile-placeholder.svg' | relative_url }}" alt="{{ site.author.name }}">
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-name">{{ site.author.name }}</h1>
+      <p class="hero-role">{{ site.tagline }}</p>
+      <p class="hero-bio">
+        I'm a researcher working on Natural Language Processing and Artificial
+        Intelligence. <!-- TODO: write 2–3 sentences about who you are, where you
+        work, and what questions drive your research. --> I also enjoy making these
+        ideas accessible to a broad audience through writing and outreach.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">My research</a>
+        <a class="btn" href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a class="btn" href="{{ '/blog/' | relative_url }}">Blog</a>
+        {% if site.social.email %}<a class="btn" href="mailto:{{ site.social.email }}">Contact</a>{% endif %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PUBLICATIONS ============ -->
+  {% if site.data.publications.size > 0 %}
+  <section class="section">
+    <div class="section-head">
+      <h2>Selected publications</h2>
+      <a class="see-all" href="{{ '/publications/' | relative_url }}">See all →</a>
+    </div>
+    <div class="card-grid">
+      {% for pub in site.data.publications limit: 3 %}
+        {% include card.html
+            url=pub.url image=pub.image title=pub.title
+            meta=pub.venue badge=pub.badge description=pub.description external=true %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- ============ LATEST BLOG POSTS ============ -->
+  {% if site.posts.size > 0 %}
+  <section class="section">
+    <div class="section-head">
+      <h2>From the blog</h2>
+      <a class="see-all" href="{{ '/blog/' | relative_url }}">All posts →</a>
+    </div>
+    <div class="card-grid">
+      {% for post in site.posts limit: 3 %}
+        {% assign post_date = post.date | date: "%B %-d, %Y" %}
+        {% include card.html
+            url=post.url
+            image=post.image
+            title=post.title
+            meta=post_date
+            badge=post.badge
+            description=post.description %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- ============ OUTREACH TEASER ============ -->
+  {% if site.data.outreach.size > 0 %}
+  <section class="section">
+    <div class="section-head">
+      <h2>Outreach &amp; books</h2>
+      <a class="see-all" href="{{ '/outreach/' | relative_url }}">More →</a>
+    </div>
+    <div class="card-grid covers">
+      {% for item in site.data.outreach limit: 4 %}
+        {% include card.html
+            url=item.url image=item.image title=item.title
+            meta=item.kind badge=item.badge description=item.description external=true %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+</div>

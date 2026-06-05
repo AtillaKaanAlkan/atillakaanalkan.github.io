@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="container container-narrow">
+  <article class="post">
+    <header class="post-header">
+      {% if page.badge %}<span class="post-badge">{{ page.badge }}</span>{% endif %}
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        {% if page.reading_time %} · {{ page.reading_time }}{% endif %}
+        {% if page.tags.size > 0 %}
+          · {% for tag in page.tags %}<span class="post-tag">#{{ tag }}</span>{% endfor %}
+        {% endif %}
+      </p>
+      {% if page.image %}
+        <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+      {% endif %}
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      <a class="back-link" href="{{ '/blog/' | relative_url }}">← Back to all posts</a>
+    </footer>
+  </article>
+</div>

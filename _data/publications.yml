@@ -1,0 +1,34 @@
+# =========================================================================
+#  SCIENTIFIC PUBLICATIONS
+#  Each entry becomes a clickable image card on the Publications page.
+#  Newest first is nice but not required — the page groups them by `year`.
+#
+#  Fields:
+#    title       (required)
+#    authors     (optional) — your name can be **bolded** with markdown in text,
+#                             here it's plain; shown as the meta line
+#    venue       (optional) — journal / conference
+#    year        (required) — used to group entries
+#    url         (required) — link to the paper (arXiv, DOI, PDF...)
+#    image       (required) — /assets/images/...  or a full https URL
+#    badge       (optional) — e.g. "Paper", "Preprint", "Journal"
+#    description (optional) — one-line plain summary
+# =========================================================================
+
+- title: "Replace with your paper title"
+  authors: "Your Name, Co-Author A, Co-Author B"
+  venue: "Conference / Journal"
+  year: 2025
+  url: "https://arxiv.org/abs/0000.00000"
+  image: "/assets/images/pub-placeholder.svg"
+  badge: "Paper"
+  description: "One sentence on what the paper shows, in plain language."
+
+- title: "An earlier paper of yours"
+  authors: "Your Name, Co-Author C"
+  venue: "Some Venue"
+  year: 2023
+  url: "https://doi.org/10.0000/example"
+  image: "/assets/images/pub-placeholder.svg"
+  badge: "Journal"
+  description: "Another short, accessible summary."

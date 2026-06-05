@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="600" viewBox="0 0 450 600" role="img" aria-label="Book cover placeholder">
+  <rect width="450" height="600" fill="#1f4e79"/>
+  <rect x="30" y="30" width="390" height="540" fill="none" stroke="#6ea8e6" stroke-width="3"/>
+  <text x="225" y="250" font-family="Georgia, serif" font-size="40" fill="#ffffff" text-anchor="middle">Your Book</text>
+  <text x="225" y="300" font-family="Georgia, serif" font-size="28" fill="#bcd4ee" text-anchor="middle">on NLP</text>
+  <text x="225" y="540" font-family="sans-serif" font-size="20" fill="#bcd4ee" text-anchor="middle">Your Name</text>
+</svg>

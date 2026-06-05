@@ -1,0 +1,50 @@
+{%- comment -%}
+=============================================================================
+  REUSABLE CLICKABLE IMAGE CARD
+  The whole card is a single link wrapped around an image + text.
+  Wrap several of these in  <div class="card-grid"> ... </div>  for a grid.
+
+  Parameters:
+    url          (required) where the card links to (paper, post, book, ...)
+    image        (required) thumbnail/cover. Local path ("/assets/images/x.png")
+                            OR full URL ("https://.../x.png").
+    title        (required) headline shown under the image
+    description  (optional) one or two lines of context
+    meta         (optional) small grey line, e.g. "Nature, 2025" or a date
+    badge        (optional) little tag on the image, e.g. "Paper" / "Blog" / "Book"
+    external     (optional) set to true to open in a new tab (use for off-site links)
+
+  Example:
+    {% include card.html
+        url="https://arxiv.org/abs/1234.5678"
+        image="/assets/images/pub-attention.png"
+        title="Attention Is All You Need"
+        meta="NeurIPS, 2017"
+        badge="Paper"
+        description="A short, plain-language summary of what the paper shows."
+        external=true %}
+=============================================================================
+{%- endcomment -%}
+{%- if include.image contains '://' -%}
+  {%- assign img_src = include.image -%}
+{%- else -%}
+  {%- assign img_src = include.image | relative_url -%}
+{%- endif -%}
+{%- if include.url contains '://' -%}
+  {%- assign href = include.url -%}
+{%- else -%}
+  {%- assign href = include.url | relative_url -%}
+{%- endif -%}
+<a class="card" href="{{ href }}"{% if include.external %} target="_blank" rel="noopener"{% endif %}>
+  {%- if include.image -%}
+  <div class="card-media">
+    <img src="{{ img_src }}" alt="{{ include.title | escape }}" loading="lazy">
+    {%- if include.badge -%}<span class="card-badge">{{ include.badge }}</span>{%- endif -%}
+  </div>
+  {%- endif -%}
+  <div class="card-body">
+    <h3 class="card-title">{{ include.title }}</h3>
+    {%- if include.meta -%}<p class="card-meta">{{ include.meta }}</p>{%- endif -%}
+    {%- if include.description -%}<p class="card-desc">{{ include.description }}</p>{%- endif -%}
+  </div>
+</a>

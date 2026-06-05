@@ -1,0 +1,32 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-social">
+      {% if site.social.email %}
+        <a href="mailto:{{ site.social.email }}" aria-label="Email" title="Email">✉ Email</a>
+      {% endif %}
+      {% if site.social.github != "" %}
+        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
+      {% endif %}
+      {% if site.social.scholar != "" %}
+        <a href="{{ site.social.scholar }}" target="_blank" rel="noopener">Google Scholar</a>
+      {% endif %}
+      {% if site.social.orcid != "" %}
+        <a href="https://orcid.org/{{ site.social.orcid }}" target="_blank" rel="noopener">ORCID</a>
+      {% endif %}
+      {% if site.social.linkedin != "" %}
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      {% endif %}
+      {% if site.social.twitter != "" %}
+        <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" rel="noopener">Twitter/X</a>
+      {% endif %}
+      {% if site.social.mastodon != "" %}
+        <a href="{{ site.social.mastodon }}" target="_blank" rel="noopener" rel="me">Mastodon</a>
+      {% endif %}
+    </div>
+    <p class="footer-meta">
+      &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}.
+      Built with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>,
+      hosted on GitHub Pages.
+    </p>
+  </div>
+</footer>

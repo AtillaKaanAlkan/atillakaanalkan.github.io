@@ -1,0 +1,21 @@
+# =========================================================================
+#  OUTREACH ITEMS — books, talks, podcasts, popular articles, videos...
+#  Each becomes a clickable image card on the Outreach page.
+#  Set  cover: true  on book entries so the card uses a tall cover layout.
+# =========================================================================
+
+- title: "Your Book on NLP"
+  kind: "Book"
+  url: "https://your-book-link.example.com"
+  image: "/assets/images/book-cover-placeholder.svg"
+  badge: "Book"
+  cover: true
+  description: "Your accessible introduction to Natural Language Processing."
+
+- title: "A public talk or interview"
+  kind: "Talk"
+  url: "https://youtube.com/watch?v=XXXX"
+  image: "/assets/images/talk-placeholder.svg"
+  badge: "Talk"
+  cover: false
+  description: "Explaining AI/NLP ideas to a general audience."

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Publication thumbnail placeholder">
+  <rect width="640" height="360" fill="#eaf1f8"/>
+  <rect x="220" y="80" width="200" height="200" rx="10" fill="#ffffff" stroke="#9bbad8" stroke-width="3"/>
+  <line x1="250" y1="120" x2="390" y2="120" stroke="#9bbad8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="250" y1="150" x2="390" y2="150" stroke="#cdddee" stroke-width="8" stroke-linecap="round"/>
+  <line x1="250" y1="180" x2="390" y2="180" stroke="#cdddee" stroke-width="8" stroke-linecap="round"/>
+  <line x1="250" y1="210" x2="340" y2="210" stroke="#cdddee" stroke-width="8" stroke-linecap="round"/>
+  <text x="320" y="320" font-family="sans-serif" font-size="20" fill="#1f4e79" text-anchor="middle">paper thumbnail</text>
+</svg>

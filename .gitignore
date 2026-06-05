@@ -1,0 +1,17 @@
+# Jekyll build output & caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Local Ruby deps
+Gemfile.lock
+vendor/
+
+# OS / editor cruft
+.DS_Store
+*~
+.vscode/
+
+# Claude Code local settings
+.claude/
