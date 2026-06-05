@@ -7,8 +7,8 @@ description: >-
   Personal website of Your Name — research, scientific publications,
   blog posts popularizing AI and NLP, and outreach.
 author:
-  name: "Your Name"          # TODO
-  email: "you@example.com"   # TODO
+  name: "Atilla Kaan Alkan"
+  email: "you@example.com"   # TODO: set your public contact email
 
 # ---- URL settings -------------------------------------------------------
 # CASE A — USER SITE: repository is named  USERNAME.github.io
@@ -20,12 +20,12 @@ author:
 #   baseurl: "/webpage"
 #
 # Pick ONE. The default below is the USER SITE case.
-url: "https://USERNAME.github.io"   # TODO
-baseurl: ""                          # TODO (set to "/REPONAME" for a project site)
+url: "https://atillaalkan.github.io"
+baseurl: ""                          # correct for a USERNAME.github.io user site
 
 # ---- Social / contact (shown in the footer and on the home page) --------
 social:
-  github: "USERNAME"        # TODO  (just the handle, e.g. "akaanalkan")
+  github: "atillaalkan"     # your GitHub handle
   linkedin: ""              # TODO  full URL or handle
   twitter: ""              # optional
   mastodon: ""             # optional, full URL
