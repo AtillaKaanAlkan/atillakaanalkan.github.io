@@ -25,21 +25,9 @@
   --font-serif: Georgia, "Times New Roman", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg:          #1A1815;   /* warm near-black */
-    --bg-alt:      #211E18;
-    --surface:     #232019;
-    --text:        #ECE7DE;
-    --text-muted:  #A59C8E;
-    --accent:      #E0795A;
-    --accent-soft: #EC9077;
-    --accent-tint: #2E261F;
-    --border:      #363027;
-    --shadow:      0 1px 2px rgba(0,0,0,.35), 0 8px 24px rgba(0,0,0,.30);
-    --shadow-hover:0 3px 8px rgba(0,0,0,.45), 0 20px 48px rgba(0,0,0,.40);
-  }
-}
+/* Dark mode intentionally disabled: the site always uses the warm cream
+   palette for a consistent aesthetic, regardless of the OS theme. */
+:root { color-scheme: light; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
