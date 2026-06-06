@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360" role="img" aria-label="Profile photo placeholder">
-  <rect width="360" height="360" fill="#eaf1f8"/>
-  <circle cx="180" cy="140" r="64" fill="#9bbad8"/>
-  <path d="M64 320c0-64 52-112 116-112s116 48 116 112z" fill="#9bbad8"/>
-  <text x="180" y="348" font-family="sans-serif" font-size="16" fill="#1f4e79" text-anchor="middle">your photo</text>
+  <rect width="360" height="360" fill="#EFE3DC"/>
+  <circle cx="180" cy="140" r="64" fill="#D7A38C"/>
+  <path d="M64 320c0-64 52-112 116-112s116 48 116 112z" fill="#D7A38C"/>
+  <text x="180" y="348" font-family="sans-serif" font-size="16" fill="#A8472C" text-anchor="middle">your photo</text>
 </svg>
