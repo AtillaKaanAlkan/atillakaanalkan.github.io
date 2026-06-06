@@ -1,0 +1,29 @@
+# =========================================================================
+#  EXTERNAL BLOG POSTS (e.g. on Medium)
+#  Each becomes a clickable image card on the Blog page and home page,
+#  opening the article in a new tab. List newest first.
+#
+#  Fields:
+#    title       (required)
+#    url         (required) link to the article
+#    date        (required) display string, e.g. "May 19, 2026"
+#    image       (required) cover image, local path or full URL
+#    description (optional) one-line summary
+#    badge       (optional) tag shown on the image, e.g. "Article"
+#    contain     (optional) true to show a wide image fully (no crop)
+# =========================================================================
+
+- title: "Retrieval-Augmented Generation (RAG): A Practical Guide"
+  url: "https://medium.com/@atillakaan.alkan/retrieval-augmented-generation-rag-a-practical-guide-270c6ecc2b0f"
+  date: "May 19, 2026"
+  image: "/assets/images/blog-rag.png"
+  badge: "Article"
+  contain: true
+  description: "From the problem of LLM hallucination to more reliable AI, illustrated with astronomical keyword assignment."
+
+- title: "When Astrophysics Meets Natural Language Processing"
+  url: "https://medium.com/@atillakaan.alkan/when-astrophysics-meets-natural-language-processing-ee84076a07ef"
+  date: "April 13, 2025"
+  image: "/assets/images/blog-astro-nlp.svg"
+  badge: "Essay"
+  description: "How AI came to read thousands of reports about celestial events in seconds: a story of curiosity, computation, and cosmic discovery."

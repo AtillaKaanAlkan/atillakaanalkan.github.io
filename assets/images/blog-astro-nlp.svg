@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="When Astrophysics Meets Natural Language Processing">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5EDE2"/>
+      <stop offset="1" stop-color="#E9CDBA"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E07B4E"/>
+      <stop offset="0.55" stop-color="#C45A3B"/>
+      <stop offset="1" stop-color="#C45A3B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#sky)"/>
+
+  <!-- supernova / star with soft glow -->
+  <circle cx="930" cy="200" r="180" fill="url(#sun)" opacity="0.85"/>
+  <circle cx="930" cy="200" r="34" fill="#C45A3B"/>
+  <g stroke="#C45A3B" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <line x1="930" y1="120" x2="930" y2="80"/>
+    <line x1="930" y1="280" x2="930" y2="320"/>
+    <line x1="850" y1="200" x2="810" y2="200"/>
+    <line x1="1010" y1="200" x2="1050" y2="200"/>
+    <line x1="876" y1="146" x2="848" y2="118"/>
+    <line x1="984" y1="254" x2="1012" y2="282"/>
+    <line x1="984" y1="146" x2="1012" y2="118"/>
+    <line x1="876" y1="254" x2="848" y2="282"/>
+  </g>
+
+  <!-- constellation: dots + connecting lines (a nod to "language" graph) -->
+  <g stroke="#B9542F" stroke-width="2" opacity="0.45">
+    <line x1="150" y1="120" x2="300" y2="180"/>
+    <line x1="300" y1="180" x2="430" y2="120"/>
+    <line x1="300" y1="180" x2="360" y2="300"/>
+    <line x1="360" y1="300" x2="520" y2="320"/>
+  </g>
+  <g fill="#B9542F">
+    <circle cx="150" cy="120" r="6"/>
+    <circle cx="300" cy="180" r="7"/>
+    <circle cx="430" cy="120" r="6"/>
+    <circle cx="360" cy="300" r="6"/>
+    <circle cx="520" cy="320" r="6"/>
+  </g>
+
+  <!-- scattered stars -->
+  <g fill="#9A4A2C">
+    <circle cx="620" cy="90" r="3"/>
+    <circle cx="700" cy="320" r="2.5"/>
+    <circle cx="200" cy="430" r="3"/>
+    <circle cx="1080" cy="430" r="3"/>
+    <circle cx="560" cy="200" r="2"/>
+  </g>
+
+  <!-- eyebrow + title -->
+  <text x="72" y="430" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700"
+        letter-spacing="3" fill="#B9542F">ESSAY</text>
+  <text x="70" y="492" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800"
+        letter-spacing="-1.5" fill="#1A1815">When Astrophysics Meets</text>
+  <text x="70" y="560" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800"
+        letter-spacing="-1.5" fill="#1A1815">Natural Language Processing</text>
+</svg>

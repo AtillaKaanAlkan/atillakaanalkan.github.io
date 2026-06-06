@@ -65,22 +65,23 @@ description: "Research, publications, blog, and outreach in natural language pro
   {% endif %}
 
   <!-- ============ LATEST BLOG POSTS ============ -->
-  {% if site.posts.size > 0 %}
+  {% if site.data.blog_external.size > 0 or site.posts.size > 0 %}
   <section class="section">
     <div class="section-head">
       <h2>From the blog</h2>
       <a class="see-all" href="{{ '/blog/' | relative_url }}">All posts →</a>
     </div>
     <div class="card-grid">
-      {% for post in site.posts limit: 3 %}
-        {% assign post_date = post.date | date: "%B %-d, %Y" %}
+      {% for post in site.data.blog_external limit: 3 %}
         {% include card.html
             url=post.url
             image=post.image
             title=post.title
-            meta=post_date
+            meta=post.date
             badge=post.badge
-            description=post.description %}
+            description=post.description
+            contain=post.contain
+            external=true %}
       {% endfor %}
     </div>
   </section>
